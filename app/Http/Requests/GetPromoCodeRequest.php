@@ -9,7 +9,7 @@ class GetPromoCodeRequest extends FormRequest
     public function rules(): array
     {
         return [
-
+            'g-recaptcha-response' => 'recaptcha'
         ];
     }
 }
